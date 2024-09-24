@@ -1,3 +1,6 @@
+const prompt = require('prompt-sync');
+const entrada = prompt();
+
 const nomeCompleto = "Samara Byanca Monteiro Miranda ";
 const anoNascimento = 2007;
 const anoAtual = 2024;
@@ -19,3 +22,23 @@ const listaDeViagens = new Array(
 );
 
 console.log(listaDeViagens);
+
+console.log(listaDeViagens[3]);
+listaDeViagens.push("coronel vivida");
+console.log(listaDeViagens);
+
+listaDeViagens.splice(3,1);
+console.log(listaDeViagens);
+
+var nomeComprador = entrada("qual o seu nome");;
+var idadeComprador = entrada("qual sua idade?");
+
+if(idadeComprador >= 18){
+  
+  console.log("ja que voce é de maior, podemos vender as passagens.")
+};
+
+if (idadeComprador < 18){
+  console.log(`olá ${nomeComprador} qual seria seu destinos para eu poder ver aqui ser ainda tem passagens ${listaDeViagens} para sua sorte temos sim passagens disponivel no momento.
+ `);
+};
