@@ -11,7 +11,26 @@ const sonho = "ser arquiteta "
 
 console.log(" olá eu sou " + nomeCompleto + " estamos no ano " + anoAtual + " eu nasci no ano de "  + anoNascimento  + " minha idade é " +  idadeAtual + " no ano que vem  " + anoQueVem + " eu terei " + idade + " ,e meu sonho é " + sonho );
 
-console.log(`oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento} e estamos no ano de ${anoAtual} minha idade é ${idadeAtual} no ano que vem ${anoQueVem} eu terei ${idade} e meu sonho é ${sonho} `)
+console.log(`oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento} e estamos no ano de ${anoAtual} minha idade é ${idadeAtual} no ano que vem ${anoQueVem} eu terei ${idade} e meu sonho é ${sonho} `);
+
+const loginCerto = "samara"
+const senhaCerto = 123
+console.log("");
+console.log("=AGENCIA DE VIAGENS=");
+console.log("");
+console.log("faça seu login");
+
+var login= entrada("digite deu login:");
+var senha= entrada("digite sua senha:");
+
+while(login != loginCerto) {
+  console.log("login errado");
+  login = entrada("digite seu login novamente");
+}
+while(senha != senhaCerto) {
+  console.log("senha errado");
+  senha = entrada("digite sua senha novamente");
+}
 
 const listaDeViagens = new Array(
   `Japão`,
@@ -39,6 +58,6 @@ if(idadeComprador >= 18){
 };
 
 if (idadeComprador < 18){
-  console.log(`olá ${nomeComprador} qual seria seu destinos para eu poder ver aqui ser ainda tem passagens ${listaDeViagens} para sua sorte temos sim passagens disponivel no momento.
+  console.log(`olá ${nomeComprador} qual seria seu destinos para eu poder ver aqui ser ainda temos passagens ${listaDeViagens} para sua sorte temos sim passagens disponivel no momento.
  `);
 };
